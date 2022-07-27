@@ -10,6 +10,9 @@ users = [
     {"email": "nick@gmail.com", "name": "nick", "id": 3},
 ]
 
+def hello_world():
+   return ‘hello world’
+
 def get_user_by_id(user_id):
     for x in users:
         if x.get("id") == int(user_id):
@@ -26,7 +29,7 @@ class User(Resource):
             return {"error": "User not found"}
         return user
 
-
+app.add_url_rule(‘/’, ‘hello’, hello_world)
 api.add_resource(User,'/user/<int:id>')
 api.add_resource(Users,'/users')
 
