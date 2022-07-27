@@ -31,4 +31,4 @@ api.add_resource(User,'/user/<int:id>')
 api.add_resource(Users,'/users')
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(host='0.0.0.0')
