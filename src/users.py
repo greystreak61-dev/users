@@ -5,9 +5,9 @@ app = Flask(__name__)
 api = Api(app, prefix="/api/v1")
 
 users = [
-    {"email": "john@gmail.com", "name": "John", "id": 1},
-    {"email": "george@gmail.com", "name": "george", "id": 2},
-    {"email": "nick@gmail.com", "name": "nick", "id": 3},
+    {"email": "john@example.com", "name": "John", "id": 1},
+    {"email": "george@example.com", "name": "george", "id": 2},
+    {"email": "nick@example.com", "name": "nick", "id": 3},
 ]
 
 def hello_world():
